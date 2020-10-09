@@ -1,0 +1,27 @@
+// Variables
+@import 'variables';
+
+// Framework CSS
+@import "../plugins/bootstrap/bootstrap";
+@import "../plugins/toastr/toastr";
+
+//Partial
+@import "partial/generic";
+@import "partial/form";
+@import "partial/dropdown";
+@import "partial/animated";
+@import "partial/header";
+@import "partial/aside";
+@import "partial/section";
+@import "partial/article";
+@import "partial/card";
+@import "partial/modal";
+@import "partial/pagination";
+@import "partial/main";
+@import "partial/responsive";
+
+//Pages
+@import "pages/auth";
+
+
+

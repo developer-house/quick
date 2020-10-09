@@ -1,0 +1,29 @@
+/* @media (min-width: 576px) { ... } */
+@include media-breakpoint-up(sm) {
+
+}
+
+/* @media (min-width: 768px) { ... } */
+@include media-breakpoint-up(md) {
+
+}
+
+/* @media (min-width: 992px) { ... } */
+@include media-breakpoint-up(lg) {
+
+}
+
+/* @media (min-width: 1200px) { ... } */
+@include media-breakpoint-up(xl) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width : 1320px;
+    }
+}
+
+/* @media (max-width: 768px) { ... } */
+@include media-breakpoint-down(md) {
+    .container-sm, .container {
+        max-width : 100%;
+    }
+
+}

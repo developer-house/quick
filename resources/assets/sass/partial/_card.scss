@@ -1,0 +1,419 @@
+.card {
+    border-radius    : 5px;
+    box-shadow       : 0 1px 4px 0 rgba(0, 0, 0, .1);
+    background-color : #fff;
+    margin-bottom    : 15px;
+    border           : 1px solid $eight;
+
+    .card-header {
+        padding             : 10px;
+        background          : white;
+        border-bottom-color : $eight;
+    }
+
+    .card-body {
+        padding : 10px;
+    }
+
+
+    .card-footer {
+        background                 : white;
+        border-top-color           : $eight;
+        border-bottom-left-radius  : 5px;
+        border-bottom-right-radius : 5px;
+        padding                    : 10px;
+    }
+
+}
+
+
+.card-profile {
+    border        : 0;
+    border-radius : 5px;
+
+    .img-header {
+        height        : 160px;
+        object-fit    : cover;
+        border-radius : 0.25rem 0.25rem 0 0;
+    }
+
+    .avatar {
+        background-color : white;
+        display          : flex;
+        margin           : -6.3rem auto .5rem auto;
+        width            : 7.875rem;
+        height           : 7.875rem;
+        border           : .1875rem solid #fff;
+        border-radius    : 50%;
+        position         : relative;
+
+        img {
+            border-radius  : 50%;
+            display        : block;
+            max-width      : 100%;
+            height         : 100%;
+            -o-object-fit  : cover;
+            object-fit     : cover;
+            pointer-events : none;
+        }
+
+        span {
+            bottom           : 6px;
+            right            : 6px;
+            position         : absolute;
+            display          : -ms-inline-flexbox;
+            display          : inline-flex;
+            flex-shrink      : 0;
+            -ms-flex-pack    : center;
+            justify-content  : center;
+            -ms-flex-align   : center;
+            align-items      : center;
+            white-space      : nowrap;
+            text-align       : center;
+            vertical-align   : baseline;
+            border           : .125rem solid #fff;
+            width            : 21px;
+            height           : 21px;
+            line-height      : 1;
+            font-size        : .71094rem;
+            border-radius    : 50%;
+            color            : #fff;
+            background-color : #00c9a7;
+        }
+    }
+
+    .name {
+        color         : $one;
+        font-size     : 1.41094rem;
+        font-weight   : 600;
+        margin-bottom : .5rem;
+        line-height   : 1.4;
+    }
+
+    .dni {
+        font-size : 14px;
+    }
+}
+
+.card-filter {
+
+    .card-header {
+        display         : flex;
+        justify-content : space-between;
+
+        .title {
+            flex          : 1;
+            white-space   : nowrap;
+            overflow      : hidden;
+            text-overflow : ellipsis;
+
+            h1 {
+                font-size     : 1.5rem;
+                font-weight   : 600;
+                margin        : 0;
+                overflow      : hidden;
+                text-overflow : ellipsis;
+                height        : 1.9rem;
+            }
+
+            h2 {
+                color          : $nine;
+                font-size      : .85em;
+                font-weight    : 400;
+                letter-spacing : normal;
+                margin         : -3px 0 0;
+            }
+        }
+
+        .options {
+            max-height      : 2.85rem;
+            display         : flex;
+            justify-content : flex-end;
+
+            .btn-option {
+                border   : .071rem solid $eight;
+                width    : 40px;
+                height   : 40px;
+                position : relative;
+
+                svg {
+                    color    : $seven;
+                    width    : 20px;
+                    position : absolute;
+                    top      : 7px;
+                    left     : 8px;
+                }
+
+                &:hover, &:focus {
+                    box-shadow : none;
+                    border     : .071rem solid $seven;
+                }
+            }
+
+            .dropdown-menu {
+                border     : 1px solid $eight;
+                box-shadow : 0 9px 10px 0 rgba(0, 0, 0, .1);
+                left       : inherit !important;
+                right      : 10px !important;
+                top        : 50px !important;
+                min-width  : 160px;
+                padding    : 0;
+
+                .dropdown-item {
+                    display         : flex;
+                    justify-content : flex-start;
+                    padding         : 9px 5px !important;
+                    font-size       : 12.25px;
+                    font-weight     : 600;
+                    color           : $nine;
+
+                    svg {
+                        height      : 15px;
+                        color       : $seven;
+                        padding-top : 3px;
+                    }
+
+                    &:hover {
+                        background : transparent !important;
+                    }
+                }
+
+                &:first-child {
+                    border-radius : 4px 4px 0 0
+                }
+            }
+
+        }
+    }
+
+    .card-footer {
+        label {
+            font-size      : .8571428571em;
+            font-weight    : 600;
+            line-height    : 1.67;
+            letter-spacing : normal;
+            color          : $nine;
+            margin-right   : 10px;
+            margin-bottom  : 0;
+        }
+    }
+
+    .card-body {
+
+        [class*="col-"] {
+            /*padding-right: 10px;
+            padding-left: 10px;*/
+        }
+
+        .btn-filter {
+            height : 40px;
+            border : 1px solid $eight;
+
+            svg {
+                color : $nine;
+                width : 17px;
+            }
+        }
+
+    }
+
+    .card-footer.open {
+        border-color : $eight;
+    }
+}
+
+.card-form {
+    .card-header {
+        border : 0;
+
+        .card-title {
+            font-size     : 14px;
+            text-align    : left;
+            font-weight   : 600;
+            margin-bottom : 0;
+            color         : $nine;
+        }
+    }
+
+    .card-body {
+
+        .picture {
+            height        : 150px;
+            width         : 150px;
+            border-radius : 50%;
+
+            img {
+                border-radius : 50%;
+                border        : 3px solid $nine;
+            }
+        }
+
+        [class*="col-"] {
+            margin-bottom : 0.5rem;
+        }
+
+        .text-truncate {
+            height : 15px;
+        }
+
+
+    }
+
+    .card-footer {
+        border-top : 0;
+
+        label.custom-file-label {
+            font-weight : 500;
+            border      : 1px solid $eight;
+            height      : 40px;
+            padding-top : 9px;
+
+            &:after {
+                height      : 38px;
+                padding-top : 9px;
+            }
+        }
+    }
+}
+
+.card-table {
+
+    .card-body {
+        padding : 0;
+
+        table {
+
+            thead {
+                tr {
+                    th {
+                        border-bottom : 1px solid $eight !important;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+
+                    td {
+                        border      : 0;
+                        color       : $nine;
+                        font-size   : 1em;
+                        font-weight : 500;
+                        line-height : 1.43;
+                        overflow    : unset;
+                        word-break  : break-word;
+                        white-space : normal !important;
+
+                        .dropdown-menu {
+                            border     : 1px solid $eight;
+                            box-shadow : 0 9px 10px 0 rgba(0, 0, 0, .1);
+                            left       : inherit !important;
+                            right      : 0 !important;
+                            top        : 40px !important;
+                            min-width  : 160px;
+                            padding    : 0;
+
+                            .dropdown-item {
+                                display         : flex;
+                                justify-content : flex-start;
+                                padding         : 9px 5px !important;
+                                font-size       : 12.25px;
+                                font-weight     : 600;
+                                color           : $nine;
+
+                                svg {
+                                    height      : 15px;
+                                    color       : $seven;
+                                    padding-top : 3px;
+                                }
+
+                                &:hover {
+                                    background : transparent !important;
+                                }
+                            }
+
+                            &:first-child {
+                                border-radius : 4px 4px 0 0
+                            }
+
+                            &:after {
+                                width               : 10px;
+                                height              : 10px;
+                                position            : absolute;
+                                right               : 19px;
+                                background          : white;
+                                top                 : -5px;
+                                content             : "";
+                                border              : 1px solid $eight;
+                                transform           : rotate(45deg);
+                                border-bottom-color : transparent;
+                                border-right-color  : transparent;
+                            }
+                        }
+
+                        .btn-outline-secondary {
+                            svg {
+                                color : $nine;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        table.table-striped {
+            tbody {
+                tr {
+                    &:nth-of-type(odd) {
+                        background : white !important;
+                    }
+
+                    &:nth-of-type(even) {
+                        background : $six !important;
+                    }
+
+                    td {
+                        border-top     : 0;
+                        vertical-align : inherit;
+
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .card-filter {
+
+        .card-body {
+            display : none;
+        }
+
+        .card-footer {
+            border-color : transparent;
+        }
+
+
+    }
+}
+
+@media (max-width : 460px) {
+    .card-filter {
+
+        .card-body {
+
+            .col-btn-filter {
+                margin-left : -10px;
+            }
+
+
+        }
+
+    }
+}
+

@@ -1,0 +1,42 @@
+.modal.fade .modal-dialog.modal-dialog-zoom {
+    -webkit-transform : translate(0, 0) scale(.5);
+    transform         : translate(0, 0) scale(.5);
+}
+
+.modal.show .modal-dialog.modal-dialog-zoom {
+    -webkit-transform : translate(0, 0) scale(1);
+    transform         : translate(0, 0) scale(1);
+}
+
+.modal-form {
+
+    [class*="col-"] {
+        margin-bottom : 0.5rem;
+    }
+
+    .text-truncate {
+        height : 15px;
+    }
+
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                border-bottom  : 0;
+                padding-bottom : 0;
+
+                .modal-title {
+                    font-weight : 600;
+                }
+            }
+
+            .modal-body {
+            }
+
+            .modal-footer {
+                border-top  : 0;
+                padding-top : 0;
+            }
+        }
+    }
+
+}

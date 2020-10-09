@@ -1,0 +1,12 @@
+@import "~toastr/toastr";
+
+
+#toast-container {
+    > div {
+        box-shadow: inherit;
+
+        &:hover{
+            box-shadow: inherit;
+        }
+    }
+}

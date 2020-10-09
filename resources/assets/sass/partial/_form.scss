@@ -1,0 +1,123 @@
+input {
+    height        : calc(1.5em + 1.875rem);
+    padding       : .875rem 1.09375rem;
+    font-size     : 1rem;
+    line-height   : 1.5;
+    border-radius : .3125rem;
+}
+
+label {
+    font-size      : 14px;
+    font-weight    : 600;
+    letter-spacing : normal;
+    color          : $nine;
+    margin-bottom  : 3px;
+    width          : 100%;
+    display        : inline-block;
+}
+
+
+.custom-form {
+
+    .form-control {
+        height        : 40px;
+        border        : 1px solid $eight;
+        border-radius : 4px;
+        color         : $nine;
+        font-size     : 14px;
+        outline       : 0;
+        padding       : 10px;
+        width         : 100%;
+        font-weight   : 500;
+
+        &:focus {
+            box-shadow : none;
+            border     : 1px solid $seven;
+        }
+
+
+    }
+
+}
+
+.custom-select, .form-control {
+    &:focus {
+        box-shadow : 0 0 10px rgba(55, 125, 255, .1);
+    }
+}
+
+.custom-control-input {
+    &:focus ~ .custom-control-label {
+        &:before {
+            box-shadow : 0 0 0 0 transparent !important;
+        }
+    }
+}
+
+.custom-control-input {
+    &:checked ~ .custom-control-label {
+        &:before {
+            color            : #fff;
+            border-color     : #377dff;
+            background-color : #377dff;
+        }
+    }
+}
+
+.form-control.is-invalid {
+    border-color : #ed4c78;
+    box-shadow   : 0 0 10px rgba(237, 76, 120, .1);
+}
+
+.btn-primary {
+    background-color : $seven;
+    border-color     : $seven;
+    font-weight      : 600;
+
+    &:hover, &:focus, &:active {
+        background-color : $seven;
+        border-color     : $seven;
+        box-shadow       : 0 9px 23px rgba(0, 129, 255, .4);
+    }
+}
+
+.btn-outline-secondary {
+    background-color : transparent;
+    border-color     : $eight;
+    font-weight      : 600;
+    color            : $eight;
+
+    &:hover, &:focus, &:active {
+        background-color : transparent !important;
+        border-color     : $eight !important;
+        color            : $eight !important;
+        box-shadow       : none !important;
+    }
+
+}
+
+
+.invalid-feedback {
+    display : block;
+}
+
+.form-control-lg {
+    height        : calc(1.5em + 1.875rem);
+    padding       : .875rem 1.09375rem;
+    font-size     : 1rem;
+    border-radius : .3125rem;
+}
+
+.form-control-2fa {
+    font-size  : 1.75rem;
+    text-align : center;
+    color      : #1e2022 !important;
+}
+
+.btn-lg {
+    padding       : .875rem 1.09375rem;
+    font-size     : 1rem;
+    line-height   : 1.5;
+    border-radius : .3125rem;
+}
+

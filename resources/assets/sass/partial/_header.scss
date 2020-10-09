@@ -1,0 +1,193 @@
+#header {
+
+    .navbar {
+        padding          : 0;
+        background-color : $one;
+        position         : fixed;
+        top              : 0;
+        left             : 0;
+        right            : 0;
+        z-index          : 99;
+
+        .container, .container-fluid {
+            display : flex;
+
+            .navbar-nav-wrap {
+                display     : flex;
+                flex-wrap   : wrap;
+                flex-basis  : 100%;
+                align-items : center;
+
+                .btn-menu {
+                    background-image    : url("data:image/svg+xml;charset=UTF-8,%3csvg width='16px' height='14px' viewBox='0 0 16 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch --%3e%3ctitle%3eIcono/Menu_Burger%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cdefs%3e%3cpath d='M1,8 C0.44771525,8 0,7.55228475 0,7 C0,6.44771525 0.44771525,6 1,6 L15,6 C15.5522847,6 16,6.44771525 16,7 C16,7.55228475 15.5522847,8 15,8 L1,8 Z M1,14 C0.44771525,14 -2.66453526e-15,13.5522847 -2.66453526e-15,13 C-2.66453526e-15,12.4477153 0.44771525,12 1,12 L9,12 C9.55228475,12 10,12.4477153 10,13 C10,13.5522847 9.55228475,14 9,14 L1,14 Z M1,2 C0.44771525,2 0,1.55228475 0,1 C0,0.44771525 0.44771525,0 1,0 L15,0 C15.5522847,0 16,0.44771525 16,1 C16,1.55228475 15.5522847,2 15,2 L1,2 Z' id='path-1'%3e%3c/path%3e%3c/defs%3e%3cg id='02_Detalles_Movimientos-T2-Mobile' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Mobile_Detalles-Movimientos_Cuenta-corriente_T2' transform='translate(-14.000000, -82.000000)'%3e%3cg id='Icono/Menu_Burger' transform='translate(12.000000, 79.000000)'%3e%3cg id='Color/Azul-500' transform='translate(2.000000, 3.000000)'%3e%3cmask id='mask-2' fill='white'%3e%3cuse xlink:href='%23path-1'%3e%3c/use%3e%3c/mask%3e%3cuse id='Mask' fill='%23FFFFFF' fill-rule='nonzero' xlink:href='%23path-1'%3e%3c/use%3e%3cg id='Color/Blanco' mask='url(%23mask-2)' fill='%23ffffff'%3e%3cg transform='translate(-22.000000, -23.000000)' id='Rectangle-2'%3e%3crect x='0' y='0' width='59' height='59'%3e%3c/rect%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+                    background-repeat   : no-repeat;
+                    background-position : left center;
+                    background-size     : 25px;
+                    display             : none;
+                    height              : $high_header;
+                    width               : $high_header;
+                    margin-left         : 15px;
+                }
+
+                .navbar-brand-wrapper {
+                    background-color : $one;
+                    position         : relative;
+                    overflow-x       : hidden;
+
+                    .navbar-brand {
+                        padding-top    : .5rem;
+                        padding-bottom : .5rem;
+                        display        : inline-block;
+                        margin-right   : 1rem;
+                        margin-left    : 1rem;
+                        font-size      : 1rem;
+                        line-height    : inherit;
+                        white-space    : nowrap;
+
+                        .navbar-brand-logo {
+                            width     : 100%;
+                            min-width : 6.5rem;
+                            max-width : 6.5rem;
+                        }
+                    }
+
+                }
+
+                .navbar-nav-wrap-content-right {
+                    margin-left : auto;
+
+                    ul {
+                        order : 4;
+
+                        li {
+
+                            .dropdown {
+                                position : relative;
+                                display  : inline-block;
+
+                                a {
+                                    display          : flex;
+                                    -ms-flex-align   : center;
+                                    align-items      : center;
+                                    color            : #1e2022;
+                                    background-color : transparent;
+                                    padding          : .25rem;
+                                    margin-top       : .5rem;
+                                    margin-bottom    : .5rem;
+                                    border-radius    : 6.1875rem;
+
+                                    &:hover {
+                                        background-color : rgba(55, 125, 255, .1);
+                                    }
+
+                                    .avatar {
+                                        position      : relative;
+                                        display       : inline-block;
+                                        width         : 2.1875rem;
+                                        height        : 2.1875rem;
+                                        border-radius : 50%;
+
+                                        img {
+                                            border-radius  : 50%;
+                                            display        : block;
+                                            max-width      : 100%;
+                                            height         : 100%;
+                                            -o-object-fit  : cover;
+                                            object-fit     : cover;
+                                            pointer-events : none;
+                                        }
+
+                                        span {
+                                            bottom           : -.08203rem;
+                                            right            : -.08203rem;
+                                            width            : .82031rem;
+                                            height           : .82031rem;
+                                            font-size        : .4375rem;
+                                            position         : absolute;
+                                            display          : -ms-inline-flexbox;
+                                            display          : inline-flex;
+                                            flex-shrink      : 0;
+                                            -ms-flex-pack    : center;
+                                            justify-content  : center;
+                                            -ms-flex-align   : center;
+                                            align-items      : center;
+                                            white-space      : nowrap;
+                                            text-align       : center;
+                                            vertical-align   : baseline;
+                                            border           : .125rem solid #fff;
+                                            line-height      : 1;
+                                            border-radius    : 50%;
+                                            color            : #fff;
+                                            background-color : #00c9a7;
+                                        }
+
+                                    }
+
+
+                                }
+
+                                .dropdown-menu {
+                                    width              : 16rem;
+                                    animation-duration : 300ms;
+                                }
+                            }
+
+                        }
+
+                        &:last-child {
+                            margin-right : 15px;
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+
+        .container-fluid {
+            padding-right : 2rem;
+            padding-left  : 2rem;
+        }
+
+    }
+
+    .navbar-expand.navbar-height {
+        height : $high_header
+    }
+
+
+}
+
+@include media-breakpoint-down(xs) {
+    #header {
+        .navbar {
+            // padding-right : 1rem;
+            // padding-left  : 1rem;
+        }
+    }
+}
+
+/* @media (max-width: 768px) { ... } */
+@include media-breakpoint-down(sm) {
+    #header {
+        .navbar {
+            .container, .container-fluid {
+                .navbar-nav-wrap {
+
+                    .btn-menu {
+                        display : block;
+                    }
+
+                    .navbar-brand-wrapper {
+                        position    : absolute;
+                        text-align  : center;
+                        width       : 100%;
+                        z-index     : -1;
+                        margin-left : -1rem;
+                    }
+                }
+            }
+        }
+    }
+}

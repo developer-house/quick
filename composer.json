@@ -1,0 +1,43 @@
+{
+    "name": "developerhouse/quick",
+    "license": "MIT",
+    "description": "Quick es una plantilla de administración totalmente responsive",
+    "authors": [
+        {
+            "name": "Daniel Jose Ruiz Gutierrez",
+            "email": "djruiz@developerhouse.co",
+            "homepage": "https://developerhouse.co",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "spatie/laravel-permission": "^3.17",
+        "laravel/ui": "^3.0",
+        "pragmarx/google2fa-laravel": "^1.4",
+        "laravel/helpers": "^1.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Developerhouse\\Quick\\": "src/"
+        },
+        "files": [
+            "src/Helper/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Developerhouse\\Quick\\Providers\\QuickServiceProvider",
+                "Developerhouse\\Quick\\Providers\\RouteServiceProvider"
+            ],
+            "aliases": {
+                "Quick": "Developerhouse\\Quick\\Facade\\QuickFacade"
+            }
+        }
+    },
+    "scripts": {
+    }
+}

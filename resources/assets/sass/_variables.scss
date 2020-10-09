@@ -1,0 +1,36 @@
+// Body
+$body-bg                : #f3f6fe;
+
+* {
+    -webkit-font-smoothing : antialiased;
+}
+
+// Typography
+$font-family-sans-serif : "avenirnext", sans-serif;
+$font-size-base         : 0.9rem;
+$line-height-base       : 1.6;
+
+$width-sidebar          : 13.25rem;
+$width-section          : calc(100% - #{$width-sidebar});
+$high_header            : 3.75rem;
+
+
+// Colors
+$blue                   : #3490dc;
+$indigo                 : #6574cd;
+$purple                 : #9561e2;
+$pink                   : #f66d9b;
+$red                    : #e3342f;
+$orange                 : #f6993f;
+$yellow                 : #ffed4a;
+$green                  : #38c172;
+$teal                   : #4dc0b5;
+$cyan                   : #6cb2eb;
+
+$one                    : #022047;
+
+$six                    : #f9fbfc;
+$seven                  : #0081ff;
+$eight                  : #dfe5f9;
+$nine                   : #7f8fa4;
+$ten                    : #dca85e;
