@@ -35,7 +35,9 @@ Route::middleware([QAuthenticate::class, Q2FAMiddleware::class, QPreventBackHist
 
     Route::get(config('quick.route.auth_login_welcome'), QHomeController::class)->name('quick.welcome');
     Route::post(config('quick.route.auth_login_2fa_verify'), [QPasswordSecurityController::class, 'verify2fa'])->name('quick.security.verify2fa');
-    Route::get(config('quick.route.profile'), [QUserController::class, 'profile'])->name('quick.profile');
+
+    //Route::get(config('quick.route.profile'), [QUserController::class, 'profile'])->name('quick.profile');
+
     Route::get(config('quick.route.logout'), [QLoginController::class, 'logout'])->name('quick.logout');
 
 
@@ -45,7 +47,7 @@ Route::middleware([QAuthenticate::class, Q2FAMiddleware::class, QPreventBackHist
     Route::resource(config('quick.route.values') . '/{id}/' . config('quick.route.parameters'), QParameterController::class)
         ->only(['store', 'update']);
 
-    Route::resource(config('quick.route.users'), QUserController::class)->only(['index', 'show', 'store', 'create', 'update']);
+    //Route::resource(config('quick.route.users'), QUserController::class)->only(['index', 'show', 'store', 'create', 'update']);
 
     Route::resource(config('quick.route.roles'), QRolesController::class)->only(['index', 'show', 'store'])
         ->names(['index' => 'role.index', 'show' => 'role.show', 'store' => 'role.store']);

@@ -21,7 +21,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 trait QAuth {
 
-    use HasRoles, Notifiable;
+    use HasRoles;
 
     protected $attempt;
 
@@ -244,14 +244,5 @@ trait QAuth {
         $request->session()->put('user_session', $answer->id);
 
     }
-
-    /*
-     * Override default password notification
-     */
-    public function sendPasswordResetNotification($token)
-    {
-        $this->notify(new ResetPasswordNotification($token));
-    }
-
 
 }

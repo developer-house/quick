@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a798c8e-aa1c-4b57-966c-b5944ba29f6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helper/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/quick.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/quick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/QAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/QAuth.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +222,7 @@
       <workItem from="1601605206467" duration="22463000" />
       <workItem from="1601702419314" duration="43796000" />
       <workItem from="1602085552497" duration="1320000" />
-      <workItem from="1602123125847" duration="23016000" />
+      <workItem from="1602123125847" duration="24075000" />
     </task>
     <servers />
   </component>

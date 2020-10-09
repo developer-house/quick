@@ -19,8 +19,6 @@ return [
         'auth_login_welcome'    => 'welcome',
         'auth_login_2fa_verify' => 'verify/2fa',
         'logout'                => 'logout',
-        'profile'               => '{user_id}/profile',
-        'users'                 => 'users',
         'roles'                 => 'role',
         'permission'            => 'permission',
     ],
