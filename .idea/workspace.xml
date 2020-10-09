@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a798c8e-aa1c-4b57-966c-b5944ba29f6a" name="Default Changelist" comment="" />
+    <list default="true" id="4a798c8e-aa1c-4b57-966c-b5944ba29f6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +46,9 @@
         <option value="SCSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -162,6 +168,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hywV8RUJolqxoZBUAxvoRYVjrv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -173,7 +180,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Http/Notifications" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -188,11 +195,11 @@
       <recent name="$PROJECT_DIR$/resources/views/layouts/themes/landkit" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Http/Notifications" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/resources/views/layouts/roles" />
       <recent name="$PROJECT_DIR$/src/Http/Facade" />
-      <recent name="$PROJECT_DIR$/src/Http/Authorizes" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -213,7 +220,7 @@
       <workItem from="1601605206467" duration="22463000" />
       <workItem from="1601702419314" duration="43796000" />
       <workItem from="1602085552497" duration="1320000" />
-      <workItem from="1602123125847" duration="19882000" />
+      <workItem from="1602123125847" duration="20535000" />
     </task>
     <servers />
   </component>
