@@ -59,10 +59,8 @@ class QForgotPasswordController extends Controller {
             $tokenData = DB::table('password_resets')->where('email', $request->get('email'))->first();
 
             if ($this->sendResetEmail($request, $request->get('email'), $tokenData->token)) {
-                dd(true);
                 return redirect()->back()->with('status', trans('A reset link has been sent to your email address.'));
             } else {
-                dd(false);
                 return redirect()->back()->withErrors(['error' => trans('A Network Error occurred. Please try again.')]);
             }
 

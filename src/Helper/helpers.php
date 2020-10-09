@@ -4,6 +4,18 @@
 use Developerhouse\Quick\Exceptions\RedirectException;
 use Illuminate\Http\Request;
 
+
+if (!function_exists('first_name_and_surname')) {
+
+    function first_name_and_surname($names, $surnames) {
+        $names    = explode(' ', $names);
+        $surnames = explode(' ', $surnames);
+
+        return ucfirst($names[0] . ' ' . $surnames[0]);
+    }
+
+}
+
 if (!function_exists('get_greeting')) {
     /**
      * Devuelve el mensaje a mostrar en el menu sidebar
@@ -25,8 +37,8 @@ if (!function_exists('get_greeting')) {
         return 'Buenas noches';
 
     }
-
 }
+
 
 if (!function_exists('detect')) {
 
@@ -104,7 +116,6 @@ if (!function_exists('check_request')) {
     }
 
 }
-
 
 if (!function_exists('expects_json_or_back')) {
     /**
