@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a798c8e-aa1c-4b57-966c-b5944ba29f6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/djruiz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/djruiz.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/quick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quick.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_21_100000_create_values_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_21_100000_create_values_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_21_110000_create_parameters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_21_110000_create_parameters_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bootstrap/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/classnames/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/classnames/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/core-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/feather-icons/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/feather-icons/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/popper.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/popper.js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/toastr/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/toastr/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/partial/_aside.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/partial/_aside.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/partial/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/partial/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/partial/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/partial/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/partial/_generic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/partial/_generic.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/partial/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/partial/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/layout/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/layout/aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/SeederCommands.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/SeederCommands.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade/QuickFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade/Quick.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helper/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QHomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/QAuthenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/QAuthenticateMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/QForceJsonResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/QForceJsonResponseMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/QOnlyAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/QOnlyAjaxMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/QPreventBackHistory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/QPreventBackHistoryMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/QRedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/QRedirectIfAuthenticatedMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Providers/QuickServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/QuickServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/QAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/QAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facade/Quick.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade/Quick.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +130,7 @@
       <workItem from="1602951951100" duration="4514000" />
       <workItem from="1602979179090" duration="669000" />
       <workItem from="1602990155204" duration="2438000" />
-      <workItem from="1603043679782" duration="3621000" />
+      <workItem from="1603043679782" duration="3637000" />
     </task>
     <servers />
   </component>
