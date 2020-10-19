@@ -5,7 +5,7 @@ namespace Developerhouse\Quick\Http\Middleware;
 use Closure;
 use Request;
 
-class QPreventBackHistory {
+class QPreventBackHistoryMiddleware {
     /**
      * Handle an incoming request.
      *

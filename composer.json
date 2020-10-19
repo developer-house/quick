@@ -34,7 +34,7 @@
                 "Developerhouse\\Quick\\Providers\\RouteServiceProvider"
             ],
             "aliases": {
-                "Quick": "Developerhouse\\Quick\\Facade\\QuickFacade"
+                "Quick": "Developerhouse\\Quick\\Facade\\Quick"
             }
         }
     },

@@ -4,6 +4,7 @@
 // Framework CSS
 @import "../plugins/bootstrap/bootstrap";
 @import "../plugins/toastr/toastr";
+@import "../plugins/select2/select2";
 
 //Partial
 @import "partial/generic";
@@ -17,6 +18,7 @@
 @import "partial/card";
 @import "partial/modal";
 @import "partial/pagination";
+@import "partial/state";
 @import "partial/main";
 @import "partial/responsive";
 

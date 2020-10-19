@@ -4,7 +4,6 @@
 namespace Developerhouse\Quick\Traits;
 
 
-use App\Notifications\ResetPasswordNotification;
 use Developerhouse\Quick\Exceptions\RedirectException;
 use Developerhouse\Quick\Http\Beans\UserSessionBean;
 use Developerhouse\Quick\Models\Tables\LoginAttempt;

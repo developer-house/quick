@@ -15,7 +15,7 @@ class CreateValuesTable extends Migration {
             $table->id('id');
             $table->string('name', 100)->unique();
             $table->text('description')->nullable(true);
-            $table->char('state')->default('1');
+            $table->char('state', 1)->default('1');
             $table->timestamps();
         });
     }

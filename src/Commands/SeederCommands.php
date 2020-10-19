@@ -178,14 +178,21 @@ class SeederCommands extends Command {
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 
         /* Roles */
-        $root = Role::create(['name' => 'root']);
+        $root  = Role::create(['name' => 'root']);
+        $admin = Role::create(['name' => 'administrator']);
 
 
         /* Permisos */
         $arrayList = [
 
+            'panel' => [
+                'panel.general',
+                'panel.root',
+                'panel.administrator',
+            ],
+
             'user' => [
-                'user.list',
+                'user.index',
                 'user.create',
                 'user.show',
                 'user.update',

@@ -18,6 +18,9 @@ label {
 
 
 .custom-form {
+    [class*="col-"] {
+        margin-bottom : 0.5rem;
+    }
 
     .form-control {
         height        : 40px;
@@ -35,10 +38,14 @@ label {
             border     : 1px solid $seven;
         }
 
+    }
 
+    textarea {
+        height : inherit !important;
     }
 
 }
+
 
 .custom-select, .form-control {
     &:focus {

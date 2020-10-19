@@ -11,15 +11,15 @@ use Developerhouse\Quick\Http\Controllers\web\QRolesController;
 use Developerhouse\Quick\Http\Controllers\web\QUserController;
 use Developerhouse\Quick\Http\Controllers\web\QValueController;
 use Developerhouse\Quick\Http\Middleware\Q2FAMiddleware;
-use Developerhouse\Quick\Http\Middleware\QAuthenticate;
+use Developerhouse\Quick\Http\Middleware\QAuthenticateMiddleware;
 use Developerhouse\Quick\Http\Middleware\QCheckSessionWebMiddleware;
-use Developerhouse\Quick\Http\Middleware\QForceJsonResponse;
-use Developerhouse\Quick\Http\Middleware\QOnlyAjax;
-use Developerhouse\Quick\Http\Middleware\QPreventBackHistory;
-use Developerhouse\Quick\Http\Middleware\QRedirectIfAuthenticated;
+use Developerhouse\Quick\Http\Middleware\QForceJsonResponseMiddleware;
+use Developerhouse\Quick\Http\Middleware\QOnlyAjaxMiddleware;
+use Developerhouse\Quick\Http\Middleware\QPreventBackHistoryMiddleware;
+use Developerhouse\Quick\Http\Middleware\QRedirectIfAuthenticatedMiddleware;
 
 
-Route::middleware(QRedirectIfAuthenticated::class)->group(function () {
+Route::middleware(QRedirectIfAuthenticatedMiddleware::class)->group(function () {
     Route::get(config('quick.route.login'), [QLoginController::class, 'showLoginForm'])->name('quick.login.from');
     Route::post(config('quick.route.login'), [QLoginController::class, 'login'])->name('quick.login.post');
 
@@ -31,7 +31,7 @@ Route::middleware(QRedirectIfAuthenticated::class)->group(function () {
 });
 
 
-Route::middleware([QAuthenticate::class, Q2FAMiddleware::class, QPreventBackHistory::class, QCheckSessionWebMiddleware::class])->group(function () {
+Route::middleware([QAuthenticateMiddleware::class, Q2FAMiddleware::class, QPreventBackHistoryMiddleware::class, QCheckSessionWebMiddleware::class])->group(function () {
 
     Route::get(config('quick.route.auth_login_welcome'), QHomeController::class)->name('quick.welcome');
     Route::post(config('quick.route.auth_login_2fa_verify'), [QPasswordSecurityController::class, 'verify2fa'])->name('quick.security.verify2fa');
@@ -54,7 +54,7 @@ Route::middleware([QAuthenticate::class, Q2FAMiddleware::class, QPreventBackHist
 
     Route::post('assign/permission/to/role', [QRolesController::class, 'assign'])
         ->name('assign.permission.to.role')
-        ->middleware([QOnlyAjax::class, QForceJsonResponse::class]);
+        ->middleware([QOnlyAjaxMiddleware::class, QForceJsonResponseMiddleware::class]);
 
     Route::resource(config('quick.route.permission'), QPermissionController::class)->only(['index', 'store'])
         ->names(['index' => 'permission.index', 'store' => 'permission.store']);

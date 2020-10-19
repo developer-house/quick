@@ -16,7 +16,7 @@ class CreateParametersTable extends Migration {
             $table->id('id');
             $table->unsignedBigInteger('value_id');
             $table->string('name', 100);
-            $table->char('state');
+            $table->char('state', 1);
             $table->string('description')->default('Sin def.');
             $table->timestamps();
 

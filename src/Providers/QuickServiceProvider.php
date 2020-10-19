@@ -24,9 +24,9 @@ class QuickServiceProvider extends ServiceProvider {
         $this->loadTranslationsFrom($this->basePath('resources/lang/'), 'quick');
 
 
-        $this->publishes([$this->basePath('resources/views/') => resource_path('views/vendor/quick')], 'quick-views');
+        //$this->publishes([$this->basePath('resources/views/') => resource_path('views/vendor/quick')], 'quick-views');
         $this->publishes([$this->basePath('resources/assets/') => resource_path('views/vendor/quick/assets'),], 'quick-assets');
-        $this->publishes([$this->basePath('config/quick.php') => base_path('config/quick.php'),], 'quick-config');
+        //$this->publishes([$this->basePath('config/quick.php') => base_path('config/quick.php'),], 'quick-config');
 
 
         //$this->publishes([$this->basePath('database/migrations/') => database_path('migrations')], 'quick-migrations');

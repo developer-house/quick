@@ -126,7 +126,7 @@
                 }
 
                 ul {
-                    list-style : none;
+                    list-style           : none;
 
                     li {
                         a {
@@ -138,8 +138,9 @@
                             font-weight : 500;
 
                             &:after, &:hover {
-                                content : inherit;
-                                color   : $one;
+                                content    : inherit;
+                                color      : $one;
+                                background : transparent !important;
                             }
 
                         }
@@ -164,7 +165,18 @@
                         color      : $one !important;
                     }
 
+                }
 
+                ul {
+                    li {
+                        a {
+                            &:after, &:hover {
+                                content    : inherit;
+                                color      : $one;
+                                background : transparent !important;
+                            }
+                        }
+                    }
                 }
             }
         }

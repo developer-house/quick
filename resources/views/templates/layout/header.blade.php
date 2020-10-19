@@ -34,7 +34,7 @@
                                         </div>
                                     </div>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="{{ route('quick.profile', Auth::id()) }}">
+                                    <a class="dropdown-item" href="#">
                                         <span class="text-truncate pr-2" title="Perfil">Perfil</span>
                                     </a>
                                     <a class="dropdown-item" href="#">

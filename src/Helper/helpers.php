@@ -3,7 +3,7 @@
 
 use Developerhouse\Quick\Exceptions\RedirectException;
 use Illuminate\Http\Request;
-
+use App\Models\User;
 
 if (!function_exists('first_name_and_surname')) {
 
@@ -15,6 +15,15 @@ if (!function_exists('first_name_and_surname')) {
     }
 
 }
+
+if (!function_exists('type_and_dni')) {
+
+    function type_and_dni(User $user) {
+        return $user->typeOfDni->name . ' ' .$user->dni;
+    }
+
+}
+
 
 if (!function_exists('get_greeting')) {
     /**

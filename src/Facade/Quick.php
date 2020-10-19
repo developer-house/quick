@@ -6,10 +6,10 @@ namespace Developerhouse\Development\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
-class QuickFacade extends Facade {
+class Quick extends Facade {
 
     protected static function getFacadeAccessor() {
-        return 'quick';
+        return 'Quick';
     }
 
 }

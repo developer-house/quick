@@ -40,3 +40,29 @@
     }
 
 }
+
+.modalLoading, .modal-confirmation {
+    .modal-dialog {
+        max-width : 400px;
+
+        .modal-content {
+            border : 0 !important;
+
+            .modal-body {
+                text-align : center;
+
+                img {
+                    width : 100px;
+                }
+            }
+
+            .modal-footer {
+                p {
+                    font-size   : 12px;
+                    text-align  : center;
+                    font-weight : 600;
+                }
+            }
+        }
+    }
+}

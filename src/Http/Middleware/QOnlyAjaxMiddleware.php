@@ -6,7 +6,7 @@ namespace Developerhouse\Quick\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class QForceJsonResponse {
+class QOnlyAjaxMiddleware {
     /**
      * Handle an incoming request.
      *
@@ -17,7 +17,9 @@ class QForceJsonResponse {
      */
     public function handle($request, Closure $next) {
 
-        $request->headers->set('Accept', 'application/json');
+        if (!$request->ajax()) {
+            abort(404);
+        }
 
         return $next($request);
     }

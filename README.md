@@ -35,5 +35,5 @@ Agregue las siguientes lineas de código a su archivo **webpack.mix.js**
  |
  */
  mix.js('resources/views/vendor/quick/assets/js/app.js', 'public/quick/js');
- mix.sass('resources/views/vendor/quick/assets/scss/app.scss', 'public/quick/css');
+ mix.sass('resources/views/vendor/quick/assets/sass/app.scss', 'public/quick/css');
 ```
