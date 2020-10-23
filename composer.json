@@ -24,7 +24,7 @@
             "Developerhouse\\Quick\\": "src/"
         },
         "files": [
-            "src/Helper/helpers.php"
+            "src/Helper/helper.php"
         ]
     },
     "extra": {
