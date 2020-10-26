@@ -1,0 +1,27 @@
+.state-successful,
+.state-waring,
+.state-error {
+    &:before {
+        content          : "";
+        display          : inline-block;
+        vertical-align   : top;
+        width            : 8px;
+        height           : 8px;
+        background-color : currentColor;
+        border-radius    : 3px;
+        margin           : 7px .3rem 0;
+    }
+}
+
+.state-successful {
+    &:before {
+        background-color : #41d49a;
+    }
+
+}
+
+.state-waring {
+    &:before {
+        background-color : #dca85e;
+    }
+}

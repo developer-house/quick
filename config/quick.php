@@ -26,12 +26,12 @@ return [
     'template' => [
         'boxed'  => 'container',
         'layout' => 'detached',
-        'logo'   => 'http://itsa.edu.co/images/logo.png',
+        'logo'   => 'https://itsa.edu.co/images/logo.png',
     ],
 
 
     'login' => [
-        'logo' => 'http://itsa.edu.co/images/logo.png',
+        'logo' => 'https://itsa.edu.co/images/logo.png',
     ],
 
     'text' => [
