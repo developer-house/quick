@@ -5,6 +5,8 @@ namespace Developerhouse\Quick\Http\Controllers\web;
 
 use Auth;
 use Developerhouse\Quick\Http\Controllers\Controller;
+use Developerhouse\Quick\Http\Facade\QPasswordSecurityFacade;
+use Developerhouse\Quick\Http\Request\QPasswordSecurityRequest;
 use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -13,30 +15,37 @@ use PragmaRX\Google2FA\Google2FA;
 
 class QPasswordSecurityController extends Controller {
 
+    protected $facade;
+    protected $request;
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
     public function __construct() {
-
+        $this->facade  = new QPasswordSecurityFacade();
+        $this->request = new QPasswordSecurityRequest();
     }
 
     /**
-     * @param PasswordSecurityRequest $request
+     * @param Request $request
      *
      * @return RedirectResponse|Redirector
      * @throws Exception
      */
-    public function updatePassword(PasswordSecurityRequest $request) {
+    public function update_password(Request $request) {
+
+        //Validación del formulario
+        $this->request->update_password($request);
 
         // Valida que la contraseña actual concuerde con la contraseña de la cuenta
-        PasswordSecurityFacade::checkCurrentPassword($request->get('current_password'));
+        $this->facade->check_current_password($request);
 
         // Actualiza la contraseña de la cuenta
-        PasswordSecurityFacade::updatePassword($request);
+        $this->facade->update_password($request);
 
-        return redirect(route('user.security', Auth::id()));
+        return redirect()->route('quick.welcome');
 
     }
 

@@ -42,14 +42,17 @@ trait QAuth {
     protected function validate_login(Request $request) {
 
         $rules = [
-            'email'    => 'required|string|email',
-            'password' => 'required|string',
+            $this->username() => 'required|string',
+            'password'        => 'required|string',
         ];
 
         $messages = [
             'email.required' => trans('quick::validation.email.required'),
             'email.string'   => trans('quick::validation.email.string'),
             'email.email'    => trans('quick::validation.email.string'),
+
+            'username.required' => trans('quick::validation.username.required'),
+            'username.string'   => trans('quick::validation.username.string'),
 
             'password.required' => trans('quick::validation.password.required'),
             'password.string'   => trans('quick::validation.password.string'),
@@ -70,7 +73,7 @@ trait QAuth {
 
                 return back()
                     ->withErrors($validator)
-                    ->withInput(['email' => $request->get('email')]);
+                    ->withInput([$this->username() => $request->get($this->username())]);
 
             }
 
@@ -82,17 +85,15 @@ trait QAuth {
 
     }
 
-
-
     /**
      * @param Request $request
+     * @param QUser   $user
      *
      * @throws RedirectException
      */
-    public function validate_state_user(Request $request): void {
+    public function validate_state_user(Request $request, QUser $user = null): void {
 
-        // Validamos si hay usuario registrado con el email envido como parámetro
-        $user = QUser::whereEmail($request->get('email'))->first();
+        $msg = trans('quick::text.user.inactive');
 
         // Validamos que el usuario exista y que no este activo de lo contrario enviamos un mensaje al cliente.
         if (($user !== null) && $user->state_id !== 1) {
@@ -102,7 +103,19 @@ trait QAuth {
             if ($request->expectsJson()) {
                 $response = response()->json(['error' => $msg], 401);
             } else {
-                $response = back()->withErrors(['email' => $msg]);
+                $response = back()->withErrors([$this->username() => $msg]);
+            }
+
+            throw (new RedirectException)->setResponse($response);
+
+        } elseif ($user === null) {
+
+            $msg = trans('quick::text.error.login');
+
+            if ($request->expectsJson()) {
+                $response = response()->json(['error' => $msg], 401);
+            } else {
+                $response = back()->withErrors([$this->username() => $msg]);
             }
 
             throw (new RedirectException)->setResponse($response);
@@ -112,22 +125,23 @@ trait QAuth {
 
     }
 
-
     /**
      * @param Request $request
+     * @param QUser   $user
      * @param array   $credentials
      *
      * @param int     $medium
      *
      * @throws RedirectException
      */
-    public function check_attempt(Request $request, array $credentials, int $medium): void {
+    public function check_attempt(Request $request, QUser $user, array $credentials, int $medium): void {
 
 
         // Validamos que el login se ejecuto con éxito utilizado el array con las credenciales
         if (Auth::attempt($credentials) === false) {
 
-            $msg = $this->increment_login_history($request, $medium);
+
+            $msg = $this->increment_login_history($request, $user, $medium);
 
             if ($request->expectsJson()) {
 
@@ -138,8 +152,8 @@ trait QAuth {
             } else {
 
                 $response = back()
-                    ->withErrors(['email' => $msg])
-                    ->withInput(['email' => $request->get('email')]);
+                    ->withErrors([$this->username() => $msg])
+                    ->withInput([$this->username() => $request->get($this->username())]);
 
             }
 
@@ -162,17 +176,15 @@ trait QAuth {
 
     /**
      * @param Request $request
+     * @param QUser   $user
      * @param int     $medium
      *
      * @return string
      */
-    public function increment_login_history(Request $request, int $medium): string {
+    public function increment_login_history(Request $request, QUser $user, int $medium): string {
 
         // Información del cliente que realiza la operación
         $info = detect();
-
-        // Validamos si hay usuario registrado con el email envido como parámetro
-        $user = QUser::whereEmail($request->get('email'))->first();
 
         // Validamos si existe el usuario
         if ($user !== null) {
@@ -210,11 +222,9 @@ trait QAuth {
 
     }
 
-
     public function clear_login_attempts(QUser $user) {
         $this->attempt->clear_login_attempts($user);
     }
-
 
     /**
      * @param Request $request
@@ -242,6 +252,19 @@ trait QAuth {
 
         $request->session()->put('user_session', $answer->id);
 
+    }
+
+    /**
+     * Get the login username to be used by the controller.
+     *
+     * @return string
+     */
+    public function username() {
+        if (config('quick.login.type') === 'email') {
+            return 'email';
+        } else {
+            return 'username';
+        }
     }
 
 }

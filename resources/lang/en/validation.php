@@ -1,11 +1,8 @@
 <?php
 
 return [
-    'email.required' => 'El correo electrónico es obligatorio',
-    'email.string'   => 'El correo electrónico es invalido',
-
-    'password.required' => 'La contraseña es obligatoria',
-    'password.string'   => 'La contraseña es invalida',
+    'email.required' => 'The email id required',
+    'email.string'   => 'The email id invalid',
 
     'type_dni.required' => 'The type of identification is required',
     'type_dni.numeric'  => 'The identification type is invalid',

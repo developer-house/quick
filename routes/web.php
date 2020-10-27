@@ -60,6 +60,21 @@ Route::middleware([QAuthenticateMiddleware::class, Q2FAMiddleware::class, QPreve
         ->names(['index' => 'permission.index', 'store' => 'permission.store']);
 
 
+
+    Route::group(['prefix' => 'account/security'], static function () {
+
+        //Route::get('/', 'SecurityController@index')->name('user.security');
+
+        Route::post('change/password', [QPasswordSecurityController::class, 'update_password'])->name('user.security.password');
+        //Route::post('enable/2fa', 'PasswordSecurityController@enable2fa')->name('user.security.enable2fa');
+        //Route::post('disable/2fa', 'PasswordSecurityController@disable2fa')->name('user.security.disable2fa');
+
+        //Route::post('verify/2fa', 'PasswordSecurityController@verify2fa')->name('user.security.verify2fa');
+
+    });
+
+
+
 });
 
 

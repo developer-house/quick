@@ -5,7 +5,6 @@ namespace Developerhouse\Quick\Providers;
 
 use Developerhouse\Quick\Commands\SeederCommands;
 use Developerhouse\Quick\Exceptions\CustomHandler;
-use Developerhouse\Quick\Helper\ClassHelpers;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\ServiceProvider;
 
@@ -40,10 +39,6 @@ class QuickServiceProvider extends ServiceProvider {
     }
 
     public function register() {
-
-        $this->app->bind('quick', function () {
-            return new ClassHelpers;
-        });
 
         $this->mergeConfigFrom($this->basePath('config/quick.php'), 'quick');
 

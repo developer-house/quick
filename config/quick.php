@@ -32,6 +32,7 @@ return [
 
     'login' => [
         'logo' => 'https://itsa.edu.co/images/logo.png',
+        'type' => 'username', //'email|username'
     ],
 
     'text' => [

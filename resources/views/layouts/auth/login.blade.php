@@ -19,17 +19,32 @@
                                 </div>
                             </div>
 
-                            <div class="js-form-message form-group mb-4">
-                                <label class="input-label" for="email">{{ trans('quick::text.email') }}</label>
-                                <input type="email"
-                                       class="form-control form-control-lg {{ $errors->has('email') ? 'is-invalid' : '' }}"
-                                       name="email"
-                                       id="email"
-                                       value="{{ old('email') }}"
-                                       placeholder="email@address.com"
-                                       required>
-                                {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
-                            </div>
+                            @if (config('quick.login.type') === 'email')
+                                <div class="js-form-message form-group mb-4">
+                                    <label class="input-label" for="email">{{ trans('quick::text.email') }}</label>
+                                    <input type="email"
+                                           class="form-control form-control-lg {{ $errors->has('email') ? 'is-invalid' : '' }}"
+                                           name="email"
+                                           id="email"
+                                           value="{{ old('email') }}"
+                                           placeholder="email@address.com"
+                                           required>
+                                    {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
+                                </div>
+                            @else
+                                <div class="js-form-message form-group mb-4">
+                                    <label class="input-label" for="username">{{ trans('quick::text.username') }}</label>
+                                    <input type="text"
+                                           class="form-control form-control-lg {{ $errors->has('email') ? 'is-invalid' : '' }}"
+                                           name="username"
+                                           id="username"
+                                           value="{{ old('username') }}"
+                                           placeholder="Username"
+                                           required>
+                                    {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
+                                </div>
+                            @endif
+
 
                             <div class="js-form-message form-group mb-4">
                                 <label class="input-label" for="password">{{ trans('quick::text.password') }}</label>
@@ -44,7 +59,7 @@
                             </div>
 
                             <div class="form-group mb-4">
-                                <a href="{{ route('quick.password.request') }}" >
+                                <a href="{{ route('quick.password.request') }}">
                                     <label class="font-size-sm text-muted cursor-pointer" for="checkbox">{{ trans('quick::text.reset.password') }}</label>
                                 </a>
                             </div>

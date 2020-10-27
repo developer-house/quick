@@ -3,9 +3,10 @@
 return [
     'sign-in'                => 'Sign in',
     'email'                  => 'Email',
+    'username'               => 'Username',
     'password'               => 'Password',
     'remember.password'      => 'Remember password',
-    'login.error'            => 'Incorrect username and/or password',
+    'error.login'            => 'Incorrect username and/or password',
     'user.inactive'          => 'Inactive user, please change password or contact support',
     'tried.unsuccessful'     => 'There have been too many unsuccessful attempts. Please try again at',
     'minutes'                => 'minutos',

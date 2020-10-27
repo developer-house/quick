@@ -37,13 +37,15 @@ class QLoginController extends Controller {
         // Validamos los parámetros enviado por el formulario
         $this->validate_login($request);
 
+        $user = QUser::where($this->username(), '=', $request->get($this->username()))->first();
+
         // Validamos el estado del usuario
-        $this->validate_state_user($request);
+        $this->validate_state_user($request, $user);
 
         // Creamos el array para validar el login
-        $credentials = request(['email', 'password']);
+        $credentials = request([$this->username(), 'password']);
 
-        $this->check_attempt($request, $credentials, 11);
+        $this->check_attempt($request, $user, $credentials, 11);
 
         return redirect()->route('quick.welcome');
 
@@ -64,10 +66,6 @@ class QLoginController extends Controller {
         return redirect()->route('quick.login.from');
 
     }
-
-
-
-
 
 
 }

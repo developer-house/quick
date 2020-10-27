@@ -3,6 +3,7 @@
 return [
     'sign-in'                => 'Iniciar sesión',
     'email'                  => 'Correo electrónico',
+    'username'               => 'Nombre de usuario',
     'password'               => 'Contraseña',
     'remember.password'      => 'Recordar contraseña',
     'error.login'            => 'Usuario y/o contraseña incorrectos',

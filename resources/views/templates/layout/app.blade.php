@@ -149,6 +149,8 @@
 
         @stack('modal')
 
+        @include('quick::templates.modal.change_password')
+
         <script>
             document.addEventListener('DOMContentLoaded', function () {
 
