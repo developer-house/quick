@@ -47,7 +47,7 @@ class QParameterController {
 
         successful_message('Registro exitoso');
 
-        return redirect()->route('values.show', $value_id);
+        return redirect()->route('value.show', $value_id);
 
     }
 
@@ -71,7 +71,7 @@ class QParameterController {
 
         successful_message('Actualización exitosa');
 
-        return redirect()->route('values.show', $value_id);
+        return redirect()->route('value.show', $value_id);
 
     }
 

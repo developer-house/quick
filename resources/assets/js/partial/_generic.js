@@ -10,3 +10,7 @@ $('.table-responsive').on('show.bs.dropdown', function () {
 $('.table-responsive').on('hide.bs.dropdown', function () {
     $('.table-responsive').css("overflow", "auto");
 });
+
+$('input[type="file"]').on('change', function (e) {
+    $(this).next('.custom-file-label').html(e.target.files[0].name);
+});

@@ -53,6 +53,15 @@ label {
     }
 }
 
+
+.custom-file-label {
+    white-space   : nowrap;
+    overflow      : hidden;
+    text-overflow : ellipsis;
+    padding-right : 80px;
+}
+
+
 .custom-control-input {
     &:focus ~ .custom-control-label {
         &:before {

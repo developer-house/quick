@@ -66,6 +66,10 @@ class QForgotPasswordController extends Controller {
 
         }
 
+        return redirect()
+            ->back()
+            ->with('status', trans('Si su correo electrónico existe en nuestros registros recibirá una notificación para restablecer la contraseña'));
+
 
     }
 
@@ -104,6 +108,7 @@ class QForgotPasswordController extends Controller {
         }
 
         $user->password = Hash::make($password);
+        $user->state_id = 1;
         $user->update();
 
         successful_message('Contraseña cambiada exitosamente');

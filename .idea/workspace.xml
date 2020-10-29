@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a798c8e-aa1c-4b57-966c-b5944ba29f6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Http/Facade/QPasswordSecurityFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Http/Request/QPasswordSecurityRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/quick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quick.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/quick.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/quick.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es/text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QPasswordSecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QPasswordSecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Providers/QuickServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Providers/QuickServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/QAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/QAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/partial/_generic.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/partial/_generic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/sass/partial/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/partial/_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QParameterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QParameterController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +171,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hywV8RUJolqxoZBUAxvoRYVjrv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -249,12 +240,20 @@
       <workItem from="1603043679782" duration="5570000" />
       <workItem from="1603386156067" duration="563000" />
       <workItem from="1603654105032" duration="172000" />
-      <workItem from="1603718281278" duration="13383000" />
+      <workItem from="1603718281278" duration="13579000" />
+      <workItem from="1603840599360" duration="1296000" />
+      <workItem from="1603917521728" duration="472000" />
+      <workItem from="1603918201080" duration="779000" />
+      <workItem from="1603925991945" duration="1251000" />
+      <workItem from="1603982387118" duration="95000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="624" y="214" key="#SQL_Dialects" timestamp="1601075763428">
