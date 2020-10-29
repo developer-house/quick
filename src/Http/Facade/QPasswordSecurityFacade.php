@@ -20,8 +20,8 @@ class QPasswordSecurityFacade {
      */
     public function check_current_password(Request $request) {
 
-        if (!(Hash::check( $request->get('current_password'), Auth::user()->password))) {
-            expects_json_or_back($request, 'La contraseña no coincide con la contraseña de su cuenta. Inténtalo de nuevo.');
+        if (!(Hash::check($request->get('current_password'), Auth::user()->password))) {
+            expects_json_or_back($request, 'error', 'La contraseña no coincide con la contraseña de su cuenta. Inténtalo de nuevo.');
         }
 
     }
@@ -29,7 +29,7 @@ class QPasswordSecurityFacade {
     /**
      * @param Request $request
      */
-    public function update_password(Request $request){
+    public function update_password(Request $request) {
 
         try {
 

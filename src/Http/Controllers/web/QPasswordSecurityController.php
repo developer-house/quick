@@ -62,7 +62,7 @@ class QPasswordSecurityController extends Controller {
         $user = User::findOrFail(Auth::id());
 
         // Valida que la contraseña actual concuerde con la contraseña de la cuenta
-        PasswordSecurityFacade::checkCurrentPassword($request->get('current_password'));
+        $this->facade->checkCurrentPassword($request->get('current_password'));
 
         $google2fa = app('pragmarx.google2fa');
 
