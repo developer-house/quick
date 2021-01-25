@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a798c8e-aa1c-4b57-966c-b5944ba29f6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/djruiz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/djruiz.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QPasswordSecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QPasswordSecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Http/Facade/QPasswordSecurityFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Facade/QPasswordSecurityFacade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/web/QValueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/web/QValueController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +244,8 @@
       <workItem from="1603917521728" duration="472000" />
       <workItem from="1603918201080" duration="779000" />
       <workItem from="1603925991945" duration="1251000" />
-      <workItem from="1603982387118" duration="1644000" />
+      <workItem from="1603982387118" duration="2608000" />
+      <workItem from="1603997921879" duration="1884000" />
     </task>
     <servers />
   </component>

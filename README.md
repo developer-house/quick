@@ -17,6 +17,10 @@ npm install <package_name> --save-dev
 * __bootstrap__
 * __jquery__
 * __popper.js__
+* __autonumeric__
+* __feather-icons__
+* __toastr__
+* __select2__
 * __sass__
 * __sass-loader__
 * __vue-template-compiler__

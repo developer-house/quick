@@ -95,6 +95,7 @@ class QValueController extends Controller {
 
         $parameters = Parameter::where('name', 'like', '%' . $request->get('search') . '%')
             ->where('value_id', '=', $id)
+            ->orderBy('id', 'desc')
             ->simplePaginate(10);
 
         $value = Value::whereId($id)->firstOrFail();
